@@ -25,7 +25,7 @@ Anyway, this script is designed to do a few things with my 720xd. It powers it o
 
 ## Usage
 ```$ python3 server.py -p on
-$ python3 server.py -p off
+$ python3 server.py -p on
 $ python3 server.py -f 50
 $ python3 server.py -t
 ```
