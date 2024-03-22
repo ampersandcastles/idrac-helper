@@ -11,4 +11,4 @@ Anyway, this script is designed to do a few things with my 720xd. It powers it o
   -f [0-100], --fan [0-100]
                         Set fan speed percentage
   -d {on,off}, --dynamic {on,off}
-                        Toggle dynamic fan control```
+                        Toggle dynamic fan control
