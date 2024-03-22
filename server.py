@@ -4,7 +4,7 @@ import subprocess
 # Server IPMI details
 IPMIHOST = "192.168.1.223"
 IPMIUSER = "root"
-IPMIPASS = "fuck pizza hut"
+IPMIPASS = "<oops>"
 
 def execute_ipmi_command(command):
     full_command = f"ipmitool -I lanplus -H {IPMIHOST} -U {IPMIUSER} -P \"{IPMIPASS}\" {command}"
