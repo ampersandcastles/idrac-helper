@@ -23,8 +23,7 @@ def power_off():
 
 def set_fan_speed(speed):
     print(f"Setting fan speed to {speed}%...")
-    fan_speed_value = int((speed * 255) / 100)
-    execute_ipmi_command(f"raw 0x30 0x30 0x02 0xff {hex(fan_speed_value)}")
+    execute_ipmi_command(f"raw 0x30 0x30 0x02 0xff {hex(speed)}")
 
 def enable_dynamic_fan_control():
     print("Enabling dynamic fan control...")
