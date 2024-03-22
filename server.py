@@ -60,6 +60,3 @@ if args.dynamic == 'on':
     enable_dynamic_fan_control()
 elif args.dynamic == 'off':
     disable_dynamic_fan_control()
-
-if not (args.power or args.fan or args.dynamic):
-    parser.print_help()
