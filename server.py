@@ -60,3 +60,14 @@ if args.dynamic == 'on':
     enable_dynamic_fan_control()
 elif args.dynamic == 'off':
     disable_dynamic_fan_control()
+
+if not (args.power or args.fan or args.dynamic):
+    parser.print_help()
+else:
+    if args.power == 'on':
+        power_on()
+    elif args.power == 'off':
+        # Here, you can add a function to power off if desired
+        pass
+    if args.fan is not None:
+        set_fan_speed(args.fan)
