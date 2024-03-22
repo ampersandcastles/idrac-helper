@@ -19,7 +19,7 @@ Anyway, this script is designed to do a few things with my 720xd. It powers it o
 - Python
 - [ipmitool](https://github.com/ipmitool/ipmitool)
     - `sudo apt install ipmitool` for Ubuntu/Debian
-    - `sudo dnf install ipmitool` for Fedora//RHEL & clones
+    - `sudo dnf install ipmitool` for Fedora/RHEL & clones
     - `sudo pacman -S ipmitool` for Arch
     - `brew install ipmitool` for MacOS
 
