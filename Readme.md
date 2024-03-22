@@ -10,5 +10,25 @@ Anyway, this script is designed to do a few things with my 720xd. It powers it o
                         Power on or off the server
   -f [0-100], --fan [0-100]
                         Set fan speed percentage
+  -t, --temp            Adjust fan speed based on temperature
   -d {on,off}, --dynamic {on,off}
                         Toggle dynamic fan control
+```
+
+## Requirements
+- Python
+- [ipmitool](https://github.com/ipmitool/ipmitool)
+    - `sudo apt install ipmitool` for Ubuntu/Debian
+    - `sudo dnf install ipmitool` for Fedora//RHEL & clones
+    - `sudo pacman -S ipmitool` for Arch
+    - `brew install ipmitool` for MacOS
+
+## Usage
+```$ python3 server.py -p on
+$ python3 server.py -p off
+$ python3 server.py -f 50
+$ python3 server.py -t
+```
+
+## Notes
+I'm currently testing this script on my server as a temperature monitoring solution. I have it set as a cronjob on my pihole server to run every 5 minutes.
