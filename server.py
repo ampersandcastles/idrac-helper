@@ -63,11 +63,3 @@ elif args.dynamic == 'off':
 
 if not (args.power or args.fan or args.dynamic):
     parser.print_help()
-else:
-    if args.power == 'on':
-        power_on()
-    elif args.power == 'off':
-        power_off()
-        pass
-    if args.fan is not None:
-        set_fan_speed(args.fan)
