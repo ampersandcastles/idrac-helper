@@ -19,13 +19,13 @@ Anyway, this script is designed to do a few things with my 720xd. It powers it o
 - Python
 - [ipmitool](https://github.com/ipmitool/ipmitool)
     - `sudo apt install ipmitool` for Ubuntu/Debian
-    - `sudo dnf install ipmitool` for Fedora//RHEL & clones
+    - `sudo dnf install ipmitool` for Fedora/RHEL & clones
     - `sudo pacman -S ipmitool` for Arch
     - `brew install ipmitool` for MacOS
 
 ## Usage
 ```$ python3 server.py -p on
-$ python3 server.py -p off
+$ python3 server.py -p on
 $ python3 server.py -f 50
 $ python3 server.py -t
 ```
