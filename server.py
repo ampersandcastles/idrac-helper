@@ -20,6 +20,8 @@ def power_on():
 def power_off():
     print("Powering off the server...")
     execute_ipmi_command("chassis power off")
+    print("Enabling dynamic fan control...")
+    execute_ipmi_command("raw 0x30 0x30 0x01 0x01")
 
 def set_fan_speed(speed):
     print(f"Setting fan speed to {speed}%...")
@@ -87,6 +89,7 @@ if args.power == 'on':
     power_on()
 elif args.power == 'off':
     power_off()
+     
 
 if args.fan is not None:
     set_fan_speed(args.fan)
